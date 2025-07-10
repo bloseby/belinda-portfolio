@@ -45,6 +45,7 @@ header {
 
 .logo {
   height: 60px;
+  filter: brightness(200%); /* or use: invert(1) if it’s on white */
 }
 
 nav ul {
