@@ -1,0 +1,112 @@
+/* === CSS VARIABLES FROM YOUR COLOUR PALETTE === */
+    /* 	Defines your colour palette as reusable variables */
+:root {
+  --oxford-blue: #1c2636;
+  --prussian-blue: #1c2e48;
+  --indigo-dye: #29446a;
+  --lapis-lazuli: #4e6586;
+  --glaucous: #5b7295;
+  --glaucous-2: #6780a5;
+  --silver-lake-blue: #748eb4;
+  --vista-blue: #809bc4;
+  --vista-blue-2: #8da9d3;
+
+  --font-main: 'Segoe UI', sans-serif;
+}
+
+/* === RESET & BASICS === */
+    /* Resets styles and sets defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--oxford-blue);
+  background-color: white;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+
+/* === HEADER & NAVIGATION === */
+    /* Styles your logo and navigation bar */
+header {
+  background-color: var(--prussian-blue);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 60px;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--vista-blue-2);
+}
+
+/* === MAIN SECTIONS === */
+    /* Adds spacing and colours to content sections */
+main section {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+section#hero {
+  background-color: var(--silver-lake-blue);
+  color: white;
+  text-align: center;
+}
+
+section#certifications ul {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+}
+
+/* === FOOTER === */
+    /* Adds a styled footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--prussian-blue);
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* === RESPONSIVE === */
+    /* Makes the layout responsive on small screens */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-bottom: 1rem;
+  }
+}
